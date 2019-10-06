@@ -73,14 +73,14 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                                         new AlertDialog.Builder(MainActivity.this)
                                                 .setIcon(android.R.drawable.ic_dialog_alert);
-               .setTitle("Are you sure?")
+                                                .setTitle("Are you sure?")
                                                 .setMessage("Do you want to delete this item?")
                                                 .setNegativeButton("No", null)
                                                 .setPositiveButton("Yes", new DialogInterface.onClickListener() {
                                                     @Override
                                                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                                                        notes.remove(position);
+                                                        notes.remove(i);
                                                         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.example.myapplication", Context.MODE_PRIVATE);
 
                                                         if (set == null) {

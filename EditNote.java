@@ -54,15 +54,15 @@ editText editText =(EditText) findViewById(R.id.editText);
 
         FloatingActionButton fab=(FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(){
-            Intent mainIntent=new Intent(getApplicationcontext(),MainActivity.class);
+            Intent mainIntent=new Intent(getApplicationContext(),MainActivity.class);
             startActivity(mainIntent);
 
         });
-getSupportactionBar().setDisplayHomeAsUpEnabled(true);
+getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 @Override
-public void beforeTextChanged(CharSequence charsequence,int i,int i1,int i2){
+public void beforeTextChanged(CharSequence charSequence,int i,int i1,int i2){
 
         }
 
